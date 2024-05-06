@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "League Spartan", sans-serif;
+}
+a {
+  font-weight: bold;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+a::after {
+  background-color: white;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+
+a:hover::after {
+  width: 100%;
+}
